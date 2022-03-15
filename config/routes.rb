@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   namespace :api do
     get '/creator-roles', to: 'creator_roles#index'
     get '/games', to: 'games#index'
+    get '/games/:id', to: 'games#show'
     get '/developers', to: 'developers#index'
+    get '/developers/:id', to: 'developers#show'
     get '/genres', to: 'genres#index'
+    get '/genres/:id', to: 'genres#show'
     get '/publishers', to: 'publishers#index'
+    get '/publishers/:id', to: 'publishers#show'
   end
 end
