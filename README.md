@@ -1,24 +1,35 @@
-# README
+## API WRAPPER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### SOURCE
+https://rawg.io/
 
-Things you may want to cover:
+#### ALL REQUEST INFORMATION
+- Retrieve all existing creator roles
+- Retrieve all existing games
+- Retrieve all games detail via unique identifier
+- Retrieve all existing developers
+- Retrieve all developers detail via unique identifier
+- Retrieve all existing genres
+- Retrieve all genres detail via unique identifier
+- Retrieve all existing publishers
+- Retrieve all publishers detail via unique identifier
 
-* Ruby version
+#### URL ENDPOINTS
+- /api/creator-roles
+- /api/games
+- /api/developers
+- /api/genres
+- /api/publishers
 
-* System dependencies
+#### URL ENDPOINTS USING UNIQUE INDENTIFIER
+- /api/games/{id}
+- /api/developers/{id}
+- /api/genres/{id}
+- /api/publishers/{id}
 
-* Configuration
+#### ERROR HANDLING SCREENSHOT WHEN DATA NOT EXIST
+![404](https://user-images.githubusercontent.com/88585596/158388442-b8a356a4-a9ce-40c9-8006-0f57714453d6.JPG)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## AFTER CLONING
+- $bundle install
+- $rails db:create
